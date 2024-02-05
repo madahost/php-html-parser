@@ -1,8 +1,6 @@
 {
     "name": "madahost/php-html-parser",
     "type": "library",
-    "minimum-stability": "dev",
-    "prefer-stable" : true,
     "description": "An HTML DOM parser. It allows you to manipulate HTML. Find tags on an HTML page with selectors just like jQuery.",
     "keywords": ["html", "dom", "parser"],
     "homepage": "https://github.com/madahost/php-html-parser",
