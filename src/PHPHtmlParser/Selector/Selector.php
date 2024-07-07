@@ -355,6 +355,11 @@ class Selector
         // handle multiple classes
         if ( ! $check && $rule['key'] == 'class') {
             $nodeClasses = explode(' ', $node->getAttribute('class'));
+
+            //fix when rule value is string
+			if(is_string($rule['value'])) {
+				$rule['value'] = [$rule['value']];
+			}
             foreach ($rule['value'] as $value) {
                 foreach ($nodeClasses as $class) {
                     if ( ! empty($class)) {
